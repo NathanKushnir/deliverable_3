@@ -1,0 +1,402 @@
+
+
+.skip{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus{
+    left: 10px;
+    top: 20px;
+    width: auto;
+    height: auto;
+    background: #FFCB05;
+}
+
+.current_page{
+    border: #FFCB05 solid 2px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style: none;
+    background: #00274C;
+    padding: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFCB05;
+    font-size: 120%;
+    white-space: nowrap;
+    padding: 0.2rem;
+}
+
+nav a:hover, nav a:focus{
+    background: #FFCB05;
+    color: #00274C;
+    border-radius: 5px;
+}
+
+main h1{
+    grid-column: 1 / -1;
+    margin: 0.5rem 0 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.8rem;
+    color: #00274C;
+    background: #FFCB05;
+}
+
+h2 {
+    text-align: center;
+    font-size: 280%;
+    margin: 0.5rem;
+    padding: 0.6rem;
+}
+
+h3{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 200%;
+    align-items: center;
+}
+
+p{
+    font-size: 220%;
+    text-align: center;
+    padding: 10px;
+}
+
+ul li{
+    font-size: 180%;
+}
+
+.mhealth_grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    grid-column: 1 / -1;
+}
+
+.physical_health, .mental_health{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.physical_descriptor, .mental_descriptor{
+    grid-column: 1 / -1;
+}
+
+.mental_health figure{
+    display: none;
+}
+
+.offering-grid img {
+    display: none;
+}
+
+.final_line{
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 280%;
+    padding: 30px;
+}
+
+.images_heading{
+    grid-column: 1 / -1;
+}
+
+figcaption {
+    font-size: 200%;
+    padding-top: 0.7rem;
+    text-align: center;
+}
+
+section {
+    background: #f8f8f8;
+    padding: 0.7rem;
+    margin: 1rem;
+}
+
+section:nth-child(odd) {
+    background: #e3f2fd;
+}
+
+section:nth-child(even) {
+    background: #fff3e0;
+}
+
+#life-outside-classroom{
+    grid-column: 1 / -1;
+}
+
+li, ul{
+    padding: 0.7rem;
+    padding-left: 2rem;
+    font-size: 120%;
+}
+
+.studying_options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.studying_images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.studying_images figcaption{
+    font-size: 280%;
+    padding: 30px;
+}
+
+.last_pantry figcaption{
+    font-size: 260%;
+}
+
+#centered_heading{
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.loc_content img, .loc_content figcaption{
+    display: none;
+}
+
+/* Suggestion box styling: */
+.suggestion-form p {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+.suggestion-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion-form label {
+    font-size: 300%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+  
+.suggestion-form input, .suggestion-form textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #00274C;
+}
+
+figcaption{
+    font-size: 200%;
+}
+
+.tut_first_box figcaption, .tut_second_box figcaption{
+    font-size: 270%;
+}
+
+.suggestion-form button {
+    margin-top: 1rem;
+    padding: 12px;
+    font-size: 1.8rem;
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+.offering-grid figcaption{
+    font-size: 300%;
+    padding: 10px;
+}
+
+.studying_options img{
+    display: none;
+}
+
+footer {
+    background-color: #FFCB05;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1200px){
+    nav ul{
+        height: 100px;
+    }
+
+    nav li{
+        display: flex;
+        font-size: 45px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main h1{
+        font-size: 60px;
+    }
+
+    h3{
+        font-size: 260%;
+    }
+
+    p{
+        font-size: 280%;
+    }
+
+    .UHS, .rec_sports{
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-top: 20px;
+        align-items: center;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+
+    .uhs-title, .uhs-description{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .sports_description h3, .sports_description p{
+        grid-column: 2;
+        align-self: center;
+    }
+
+    .campus_img figure{
+        grid-column: 2;
+    }
+
+
+    .UHS h3, .rec_sports h3{
+        font-size: 40px;
+        justify-items: center;
+        padding-left: 20px;
+        align-content: center;
+    }
+    .UHS p, .rec_sports p{
+        font-size: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .UHS figure, .rec_sports figure{
+        padding-right: 20px;
+    }
+    .UHS figcaption, .rec_sports figcaption{
+        font-size: 200%;
+        padding-top: 20px;
+    }
+
+    .mental_health{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .mental_health h3{
+        grid-column: 1;
+    }
+    .mental_health p{
+        grid-column: 2;
+    }
+    .mental_health figure{
+        display: block;
+        grid-column: 3;
+        grid-row: 2 / span 4;
+        padding: 20px;
+    }
+    .loc_content{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        align-items: center;
+    }
+
+    .loc_content img, .loc_content figcaption{
+        display: grid;
+    }
+
+    .offering-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+      
+    .offering-grid figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+      
+    .offering-grid img {
+        width: 90%;
+        padding: 10px;
+        align-items: baseline;
+    }
+
+    .offering-grid figcaption {
+        margin-top: 10px;
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    .offering-grid img {
+        display: block;
+    }
+
+    .studying_options{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .studying_options figure{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        height: 100%;
+    }
+
+    .studying_options img{
+        display: flex;
+    }
+
+    .tutoring_midsection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+
+    .tutoring_midsection figcaption{
+        font-size: 300%;
+        justify-content: center;
+        align-content: center;
+        padding: 30px;
+    }
+
+    .tutoring_midsection img{
+        width: 150%;
+    }
+}
